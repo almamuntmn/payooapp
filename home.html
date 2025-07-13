@@ -11,44 +11,41 @@
 
 <body>
     <main class="flex justify-center">
-        <div class="mockup-phone">
-            <div class="mockup-phone-camera"></div>
-            <div class="bg-base-200 mockup-phone-display flex flex-col items-center p-4">
-                <div class="w-[350px] flex items-center justify-between mt-10">
-                    <div class="text-5xl font-bold">Payoo</div>
-                    <div id="log-out" class="cursor-pointer">Log out</div>
-                </div>
-                <!-- balance -->
-                <div class="stats">
-                    <div>
-                        <div class="stat text-center">
-                            <div id="balance" class="stat-value">100</div>
-                            <div class="stat-desc">Available Balance</div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="divider"></div>
-                <!-- action button -->
-                <div class="">
-                    <button id="cash-in-btn" class="btn btn-lg bg-green-500">Cash in</button>
-                    <button class="btn btn-lg bg-red-400 text-white">Cash Out</button>
-                </div>
-                <div class="divider"></div>
-                <!-- add money start -->
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                    <div class="card-body">
-                        <fieldset class="fieldset">
-                            <label class="label">Amount</label>
-                            <input id="amount" type="text" class="input" placeholder="Amount" />
-                            <label class="label">Pin</label>
-                            <input id="pin-number" type="password" class="input" placeholder="Pin" />
-                            <button id="add-money-btn" class="btn btn-neutral mt-4">Add Money</button>
-                        </fieldset>
-                    </div>
-                </div>
-                <!-- add money end -->
+        <div class="bg-base-200 min-h-screen w-screen flex flex-col items-center p-4">
+            <div class="flex items-center gap-30 mt-10">
+                <div class="text-5xl font-bold">Payoo</div>
+                <div id="log-out" class="cursor-pointer">Log out</div>
             </div>
+            <!-- balance -->
+            <div class="stats shadow-xl">
+                <div>
+                    <div class="stat text-center">
+                        <div id="balance" class="stat-value">100</div>
+                        <div class="stat-desc">Available Balance</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="divider"></div>
+            <!-- action button -->
+            <div class="">
+                <button id="cash-in-btn" class="btn btn-lg bg-green-500">Cash in</button>
+                <button class="btn btn-lg bg-red-400 text-white">Cash Out</button>
+            </div>
+            <div class="divider"></div>
+            <!-- add money start -->
+            <div class="card w-full max-w-sm">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label">Amount</label>
+                        <input id="amount" type="text" class="input" placeholder="Amount" />
+                        <label class="label">Pin</label>
+                        <input id="pin-number" type="password" class="input" placeholder="Pin" />
+                        <button id="add-money-btn" class="btn btn-neutral mt-4">Add Money</button>
+                    </fieldset>
+                </div>
+            </div>
+            <!-- add money end -->
         </div>
     </main>
     <script src="js/home.js"></script>
