@@ -29,12 +29,12 @@
             <div class="divider"></div>
             <!-- action button -->
             <div class="">
-                <button id="cash-in-btn" class="btn btn-lg bg-green-500">Cash in</button>
-                <button class="btn btn-lg bg-red-400 text-white">Cash Out</button>
+                <button id="show-cash-in" class="btn btn-lg bg-green-500">Cash in</button>
+                <button id="show-cash-out" class="btn btn-lg bg-red-400 text-white">Cash Out</button>
             </div>
             <div class="divider"></div>
             <!-- add money start -->
-            <div class="card w-full max-w-sm">
+            <div id="add-money-form" class="card w-full max-w-sm">
                 <div class="card-body">
                     <fieldset class="fieldset">
                         <label class="label">Amount</label>
@@ -46,9 +46,24 @@
                 </div>
             </div>
             <!-- add money end -->
+            <!-- cash out start -->
+            <div id="cash-out-form" class="hidden card w-full max-w-sm">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label">Amount</label>
+                        <input id="amount-cash-out" type="text" class="input" placeholder="Amount" />
+                        <label class="label">Pin</label>
+                        <input id="pin-number-out" type="password" class="input" placeholder="Pin" />
+                        <button id="cash-out-btn" class="btn btn-neutral mt-4">Cash Out</button>
+                    </fieldset>
+                </div>
+            </div>
+            <!-- cash out end -->
         </div>
     </main>
     <script src="js/home.js"></script>
+    <script src="js/cashOut.js"></script>
+    <script src="js/features.js"></script>
 </body>
 
 </html>
