@@ -1,4 +1,4 @@
-document.getElementById('add-money-btn').addEventListener('click', function (event) {
+document.getElementById('login-btn').addEventListener('click', function (event) {
     event.preventDefault;
 
     const phoneNUmber = document.getElementById('phone-number').value;

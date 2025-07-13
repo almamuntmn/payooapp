@@ -22,7 +22,7 @@
                 <div class="stats">
                     <div>
                         <div class="stat text-center">
-                            <div class="stat-value">00</div>
+                            <div id="balance" class="stat-value">100</div>
                             <div class="stat-desc">Available Balance</div>
                         </div>
                     </div>
@@ -30,8 +30,8 @@
                 </div>
                 <div class="divider"></div>
                 <!-- action button -->
-                <div>
-                    <button id="add-money-btn" class="btn btn-lg bg-green-500">Add Money</button>
+                <div class="">
+                    <button id="cash-in-btn" class="btn btn-lg bg-green-500">Cash in</button>
                     <button class="btn btn-lg bg-red-400 text-white">Cash Out</button>
                 </div>
                 <div class="divider"></div>
@@ -42,8 +42,8 @@
                             <label class="label">Amount</label>
                             <input id="amount" type="text" class="input" placeholder="Amount" />
                             <label class="label">Pin</label>
-                            <input type="password" class="input" placeholder="Pin" />
-                            <button class="btn btn-neutral mt-4">Add Money</button>
+                            <input id="pin-number" type="password" class="input" placeholder="Pin" />
+                            <button id="add-money-btn" class="btn btn-neutral mt-4">Add Money</button>
                         </fieldset>
                     </div>
                 </div>
