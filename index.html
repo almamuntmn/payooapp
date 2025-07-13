@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo App</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display grid place-content-center">
+                <!-- card start -->
+                <div class="hero bg-base-200 min-h-screen w-screen">
+                    <div class="hero-content flex-col w-screen">
+                        <div class="">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="label">Phone Number</label>
+                                    <input id="phone-number" type="text" class="input" placeholder="Your Phone Number" />
+                                    <label class="label">Pin</label>
+                                    <input id="pin-number" type="password" class="input" placeholder="your Pin" />
+                                    <div><a class="link link-hover">Forgot pin?</a></div>
+                                    <button id="add-money-btn" class="btn btn-neutral mt-4">Add Money</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end -->
+            </div>
+        </div>
+    </main>
+    <script src="js/login.js"></script>
 </body>
+
 </html>
