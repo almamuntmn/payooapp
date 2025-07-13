@@ -8,7 +8,7 @@ document.getElementById('login-btn').addEventListener('click', function (event) 
 
     if (phoneNUmber === '01946159273' && pinNumber === '1234') {
         console.log('You are logged in');
-        window.location.href = '/home.html'
+        window.location.href = 'home.html';
     }
     else {
         alert('Wrong Phone or Pin');
