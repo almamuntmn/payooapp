@@ -1,4 +1,4 @@
-document.getElementById('add-money-btn').addEventListener('click', function(event){
+document.getElementById('add-money-btn').addEventListener('click', function (event) {
     event.preventDefault;
 
     const phoneNUmber = document.getElementById('phone-number').value;
@@ -6,10 +6,11 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
     const pinNumber = document.getElementById('pin-number').value;
     console.log(pinNumber);
 
-    if(phoneNUmber === '01946159273' && pinNumber === '1234'){
+    if (phoneNUmber === '01946159273' && pinNumber === '1234') {
         console.log('You are logged in');
+        window.location.href = '/home.html'
     }
-    else{
+    else {
         alert('Wrong Phone or Pin');
     }
 })
